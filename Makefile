@@ -5,23 +5,23 @@ DESTINATION ?= "platform=iOS Simulator,name=iPhone 5"
 PROJECT := Segment-Taplytics
 XC_ARGS := -scheme $(PROJECT)-Example -workspace Example/$(PROJECT).xcworkspace -sdk $(SDK) -destination $(DESTINATION) ONLY_ACTIVE_ARCH=NO
 
-install: Example/Podfile Segment-Taplytics.podspec
-    pod install --project-directory=Example
+install: Example/Podfile $(PROJECT).podspec
+	pod install --project-directory=Example
 
 clean:
-    xcodebuild $(XC_ARGS) clean | $(XCPRETTY)
+	xcodebuild $(XC_ARGS) clean | $(XCPRETTY)
 
 build:
-    xcodebuild $(XC_ARGS) | $(XCPRETTY)
+	xcodebuild $(XC_ARGS) | $(XCPRETTY)
 
 test:
-    xcodebuild test $(XC_ARGS) | $(XCPRETTY)
+	xcodebuild test $(XC_ARGS) | $(XCPRETTY)
 
 xcbuild:
-    xctool $(XC_ARGS)
+	xctool $(XC_ARGS)
 
 xctest:
-    xctool test $(XC_ARGS)
+	xctool test $(XC_ARGS)
 
 .PHONY: test build xctest xcbuild clean
 .SILENT:

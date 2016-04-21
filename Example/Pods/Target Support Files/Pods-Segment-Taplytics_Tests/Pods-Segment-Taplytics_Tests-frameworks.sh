@@ -84,12 +84,12 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "Pods-Segment-Taplytics_Tests/Segment_Taplytics.framework"
+  install_framework "Pods-Segment-Taplytics_Tests/Analytics.framework"
   install_framework "Pods-Segment-Taplytics_Tests/Expecta.framework"
   install_framework "Pods-Segment-Taplytics_Tests/Specta.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "Pods-Segment-Taplytics_Tests/Segment_Taplytics.framework"
+  install_framework "Pods-Segment-Taplytics_Tests/Analytics.framework"
   install_framework "Pods-Segment-Taplytics_Tests/Expecta.framework"
   install_framework "Pods-Segment-Taplytics_Tests/Specta.framework"
 fi

@@ -1,6 +1,0 @@
-framework module Segment_Taplytics {
-  umbrella header "Segment-Taplytics-umbrella.h"
-
-  export *
-  module * { export * }
-}
