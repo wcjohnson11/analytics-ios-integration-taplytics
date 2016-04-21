@@ -1,0 +1,24 @@
+{
+  "name": "Segment-Taplytics",
+  "version": "0.1.0",
+  "summary": "A short description of Segment-Taplytics.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/Segment-Taplytics",
+  "license": "MIT",
+  "authors": {
+    "wcjohnson11": "williamcouperjohnson@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/Segment-Taplytics.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "Segment-Taplytics/Classes/**/*",
+  "resource_bundles": {
+    "Segment-Taplytics": [
+      "Segment-Taplytics/Assets/*.png"
+    ]
+  }
+}
